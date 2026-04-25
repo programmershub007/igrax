@@ -1,32 +1,3 @@
-// import axios from "axios";
-
-// export async function GET(req) {
-//   try {
-//     const { searchParams } = new URL(req.url);
-//     const videoUrl = searchParams.get("url");
-
-//     if (!videoUrl) {
-//       return new Response("No URL provided", { status: 400 });
-//     }
-
-//     const response = await axios.get(videoUrl, {
-//       responseType: "stream",
-//     });
-
-//     return new Response(response.data, {
-//       headers: {
-//         "Content-Type": "video/mp4",
-//         "Content-Disposition": "attachment; filename=reel.mp4",
-//       },
-//     });
-
-//   } catch (err) {
-//     console.error(err);
-//     return new Response("Download failed", { status: 500 });
-//   }
-// }
-
-
 
 import axios from "axios";
 
